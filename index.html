@@ -75,6 +75,11 @@ footer .brand{justify-content:center;margin-bottom:10px}
 .connect h3{font-size:1.2rem;margin-bottom:8px}
 .connect p{color:var(--muted)}
 @media(max-width:760px){.hero-wrap,.gallery,.connect{grid-template-columns:1fr;text-align:center}.hero-wrap .ctas{justify-content:center}.hero-wrap .logo-big{margin-left:auto}}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:26px}
+.flow span{padding:8px 16px;border:1px solid var(--bordo);border-radius:999px;background:rgba(128,0,32,.18);color:#fff;font-weight:600;font-size:.92rem}
+.flow i{color:var(--green);font-style:normal;font-weight:800}
+.note{color:var(--muted);margin-top:12px;max-width:760px;font-size:.95rem}
+.subh{margin-top:48px;font-size:1.3rem;color:#fff}
 </style>
 </head>
 <body>
@@ -206,23 +211,53 @@ footer .brand{justify-content:center;margin-bottom:10px}
 <div class="band">
 <section id="app" class="levels">
   <div class="kicker">App</div>
-  <h2>Three levels of detail</h2>
-  <p class="lead">Start with a simple answer and go deeper only when you need to.</p>
+  <h2>Wherever there's a motor, MotorEar hears it</h2>
+  <p class="lead">Cars, trucks, tractors, farm machinery, machine tools and industrial equipment. The MotorEar app turns what the device hears and reads into a clear answer anyone can understand, no mechanical knowledge needed.</p>
+
+  <div class="flow">
+    <span>Machine</span><i>&rarr;</i><span>MotorEar device</span><i>&rarr;</i><span>MotorEar app</span>
+  </div>
+  <p class="note">The device connects to the vehicle's OBD-II port through its own encrypted MotorEar adapter and sends everything to your phone over Bluetooth. The link is protected, so third-party adapters can't connect to it.</p>
+
   <div class="grid">
     <div class="card">
       <div class="lights"><span style="background:#22c55e"></span><span style="background:#eab308"></span><span style="background:#dc2626"></span></div>
-      <h3>Traffic light</h3>
-      <p>Normal, check soon, or about to fail. One glance is enough.</p>
-    </div>
-    <div class="card">
-      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20"/><path d="M3 19c2 0 2-8 4-8s2 8 4 8 2-14 4-14 2 14 4 14 2-5 3-5"/></svg>
-      <h3>Simplified spectrum</h3>
-      <p>The frequency spectrum with labelled peaks: bearing, gearbox, inverter.</p>
+      <h3>A traffic light, not error codes</h3>
+      <p><b style="color:#22c55e">Green</b> means everything is normal. <b style="color:#eab308">Yellow</b> means it works, with reservations. <b style="color:#ef4444">Red</b> means act now. Cryptic fault codes become one clear colour.</p>
     </div>
     <div class="card">
       <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 12h5"/><circle class="blink" cx="9.5" cy="12" r="2.5" style="stroke:#dc2626"/></svg>
-      <h3>Motor diagram</h3>
-      <p>An animated motor diagram with the failing part blinking, plus a remaining-life forecast.</p>
+      <h3>Exactly which part</h3>
+      <p>Not just "something is wrong". The app points to the specific component, for example which bearing is wearing out, and highlights it on a diagram.</p>
+    </div>
+    <div class="card">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
+      <h3>Plain-language advice</h3>
+      <p>What the problem means, how serious it is and how to fix it, explained in simple words for people who know nothing about engines.</p>
+    </div>
+  </div>
+
+  <h3 class="subh">What the device does for you</h3>
+  <div class="grid">
+    <div class="card">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+      <h3>Listens to the engine</h3>
+      <p>A magnetic probe attaches to the engine or motor housing and picks up its vibration and sound.</p>
+    </div>
+    <div class="card">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="14" width="5" height="7" rx="1.5"/><rect x="17" y="14" width="5" height="7" rx="1.5"/></svg>
+      <h3>Hears through the noise</h3>
+      <p>Two separate listening channels, one for the motor and one for the background, so workshop or field noise is filtered out of the reading.</p>
+    </div>
+    <div class="card">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z"/></svg>
+      <h3>Watches the temperature</h3>
+      <p>Tracks engine temperature and flags overheating together with the sound and vibration picture.</p>
+    </div>
+    <div class="card">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg>
+      <h3>Never lose it</h3>
+      <p>Misplaced the device? Tap "Find my MotorEar" in the app and it sounds an alarm so you can locate it.</p>
     </div>
   </div>
 </section>
