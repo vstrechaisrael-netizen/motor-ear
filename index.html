@@ -148,12 +148,12 @@ footer .brand{justify-content:center;margin-bottom:10px}
 <section id="about">
   <div class="kicker">What it is</div>
   <h2>A stethoscope for electric motors</h2>
-  <p class="lead">MotorEar mounts on the motor housing with a magnet. A MEMS microphone captures the vibration and acoustic spectrum, the device analyzes it, and predicts which component is wearing out long before it fails.</p>
+  <p class="lead">MotorEar mounts on the motor housing with a magnet. Its sensors capture the vibration and sound of the motor, the device analyzes it, and predicts which component is wearing out long before it fails.</p>
   <div class="grid">
     <div class="card">
       <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="14" width="5" height="7" rx="1.5"/><rect x="17" y="14" width="5" height="7" rx="1.5"/></svg>
       <h3>Listen</h3>
-      <p>Attaches to the motor and records its vibration and acoustic spectrum through a MEMS microphone.</p>
+      <p>Attaches to the motor and records its vibration and sound.</p>
     </div>
     <div class="card">
       <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16l3-6 3 4 3-9 3 7 2-3"/></svg>
@@ -175,7 +175,7 @@ footer .brand{justify-content:center;margin-bottom:10px}
   <div class="steps">
     <div class="step"><h3>Attach</h3><p>Place MotorEar on the motor housing. The neodymium magnet holds it firmly.</p></div>
     <div class="step"><h3>Record</h3><p>Press start. The device records the vibration and acoustic spectrum for a few seconds.</p></div>
-    <div class="step"><h3>Analyze</h3><p>The ESP32 compares the spectrum with a healthy baseline and earlier measurements.</p></div>
+    <div class="step"><h3>Analyze</h3><p>MotorEar compares the sound with a healthy baseline and earlier measurements.</p></div>
     <div class="step"><h3>Predict</h3><p>You get a clear status and an estimate of how long the component will last.</p></div>
   </div>
 </section>
@@ -192,15 +192,16 @@ footer .brand{justify-content:center;margin-bottom:10px}
 
 <section id="specs">
   <div class="kicker">Specifications</div>
-  <h2>Inside the device</h2>
+  <h2>What MotorEar gives you</h2>
   <table>
-    <tr><td>Processor</td><td>ESP32 with Wi-Fi and Bluetooth</td></tr>
-    <tr><td>Microphone</td><td>INMP441 digital MEMS microphone (I2S)</td></tr>
-    <tr><td>Mounting</td><td>Neodymium magnet</td></tr>
-    <tr><td>Power</td><td>Rechargeable Li-ion / LiPo battery, USB-C charging</td></tr>
-    <tr><td>Temperature</td><td>Temperature sensor <span class="opt">optional</span></td></tr>
-    <tr><td>Vibration</td><td>ADXL345 accelerometer <span class="opt">optional</span></td></tr>
-    <tr><td>Ultrasound</td><td>SPM ultrasonic sensor <span class="opt">optional</span></td></tr>
+    <tr><td>Vehicle diagnostics</td><td>Reads OBD-II fault codes through MotorEar's own encrypted adapter and turns them into a simple traffic light</td></tr>
+    <tr><td>Engine listening</td><td>Magnetic probe that attaches to the engine and picks up its sound and vibration</td></tr>
+    <tr><td>Noise cancelling</td><td>Two microphones: one listens to the engine, the other to the background, so surrounding noise is filtered out</td></tr>
+    <tr><td>Temperature</td><td>Built-in temperature sensor that tracks engine heat and warns about overheating</td></tr>
+    <tr><td>Connection</td><td>Bluetooth link to the MotorEar app on your phone</td></tr>
+    <tr><td>Battery</td><td>2.5 thousand mAh rechargeable battery</td></tr>
+    <tr><td>Lost-device finder</td><td>Tap in the app and the device sounds a signal so you can find it</td></tr>
+    <tr><td>Works with</td><td>Cars, trucks, tractors, farm machinery, machine tools and industrial equipment</td></tr>
   </table>
   <div class="connect">
     <figure class="photo"><img src="obd.jpg" alt="MotorEar OBD-II Bluetooth adapter"><figcaption>MotorEar OBD-II adapter with Bluetooth indicator, shown next to a finger for scale.</figcaption></figure>
@@ -212,7 +213,7 @@ footer .brand{justify-content:center;margin-bottom:10px}
 <section id="app" class="levels">
   <div class="kicker">App</div>
   <h2>Wherever there's a motor, MotorEar hears it</h2>
-  <p class="lead">Cars, trucks, tractors, farm machinery, machine tools and industrial equipment. The MotorEar app turns what the device hears and reads into a clear answer anyone can understand, no mechanical knowledge needed.</p>
+  <p class="lead">Cars, trucks, tractors, agricultural machinery, machine tools and industrial equipment. The MotorEar app turns what the device hears and reads into a clear answer anyone can understand, no mechanical knowledge needed.</p>
 
   <div class="flow">
     <span>Machine</span><i>&rarr;</i><span>MotorEar device</span><i>&rarr;</i><span>MotorEar app</span>
@@ -223,7 +224,7 @@ footer .brand{justify-content:center;margin-bottom:10px}
     <div class="card">
       <div class="lights"><span style="background:#22c55e"></span><span style="background:#eab308"></span><span style="background:#dc2626"></span></div>
       <h3>A traffic light, not error codes</h3>
-      <p><b style="color:#22c55e">Green</b> means everything is normal. <b style="color:#eab308">Yellow</b> means it works, with reservations. <b style="color:#ef4444">Red</b> means act now. Cryptic fault codes become one clear colour.</p>
+      <p><b style="color:#22c55e">Green</b> means it's working fine. <b style="color:#eab308">Yellow</b> means check soon. <b style="color:#ef4444">Red</b> means urgent, act now. Cryptic OBD-II error codes become one clear colour.</p>
     </div>
     <div class="card">
       <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 12h5"/><circle class="blink" cx="9.5" cy="12" r="2.5" style="stroke:#dc2626"/></svg>
