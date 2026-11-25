@@ -70,6 +70,11 @@ footer .brand{justify-content:center;margin-bottom:10px}
 .photo img{display:block;width:100%;height:auto}
 .probe-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;aspect-ratio:4/3;background:#0d0d0d;color:#9CA3AF;font-size:.9rem;text-align:center;padding:20px}
 .probe-ph svg{width:72px;height:72px}
+.founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center;margin-top:30px}
+.founder .photo{max-width:360px;justify-self:center;box-shadow:0 0 50px rgba(128,0,32,.28)}
+.founder blockquote{margin:22px 0 0;padding:14px 20px;border-left:3px solid var(--green);color:#fff;font-size:1.1rem;font-style:italic}
+.founder .sign{margin-top:10px;color:var(--green);font-weight:700}
+@media(max-width:760px){.founder{grid-template-columns:1fr}}
 .photo figcaption{padding:10px 14px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 .hero .photo{max-width:380px;justify-self:center;box-shadow:0 0 60px rgba(34,197,94,.18)}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
@@ -128,6 +133,7 @@ footer{border-top-color:var(--bordo)}
       <a href="#box">In the box</a>
       <a href="#specs">Specifications</a>
       <a href="#app">App</a>
+      <a href="#founder">Founder</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-b btn-sm" href="#contact" style="color:#fff">Get in touch</a>
@@ -274,6 +280,21 @@ footer{border-top-color:var(--bordo)}
   </div>
 </section>
 </div>
+
+<section id="founder">
+  <div class="kicker">The person behind MotorEar</div>
+  <h2>Built so that anyone can understand their machine</h2>
+  <div class="founder">
+    <figure class="photo"><img src="founder.jpg" alt="Roman Yashaev, creator of MotorEar"><figcaption>Roman Yashaev, creator of MotorEar</figcaption></figure>
+    <div>
+      <p>MotorEar was created by Roman Yashaev in Israel. It started with a simple question: why does it take an expert to know that something is wrong with a motor, when the motor is already telling us through its sound and vibration?</p>
+      <p>Roman's goal is to make professional-level diagnostics affordable and available to everyone: drivers, farmers, mechanics, workshop owners and factory staff. Above all, MotorEar is designed for people with no technical background. You don't need to read charts, know part numbers or understand engineering. You attach the probe, open the app and get a clear answer in plain words: green, yellow or red, which part, and what to do next.</p>
+      <p>Every detail of the device, from the large screen to the simple traffic-light result, follows one idea: technology should do the hard work, so people don't have to.</p>
+      <blockquote>“I want every person, not only engineers, to be able to hear what their machine is saying and fix a problem before it becomes a breakdown.”</blockquote>
+      <div class="sign">Roman Yashaev, founder</div>
+    </div>
+  </div>
+</section>
 
 <section id="faq">
   <div class="kicker">FAQ</div>
