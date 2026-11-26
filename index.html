@@ -80,6 +80,10 @@ footer .brand{justify-content:center;margin-bottom:10px}
 .probe-how ul{margin:14px 0 0;padding-left:20px}.probe-how li{margin:8px 0}
 .probe-how li b{color:var(--green)}
 @media(max-width:760px){.probe-how{grid-template-columns:1fr}}
+.lead{font-size:1.15rem;color:#fff}
+#about h3{margin-top:34px}
+#about ul{padding-left:20px}
+.faq-mini p{margin:14px 0}
 .photo figcaption{padding:10px 14px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 .hero .photo{max-width:380px;justify-self:center;box-shadow:0 0 60px rgba(34,197,94,.18)}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
@@ -167,24 +171,51 @@ footer{border-top-color:var(--bordo)}
 
 <section id="about">
   <div class="kicker">What it is</div>
-  <h2>A stethoscope for electric motors</h2>
-  <p class="lead">MotorEar mounts on the motor housing with a magnet. Its sensors capture the vibration and sound of the motor, the device analyzes it, and predicts which component is wearing out long before it fails.</p>
+  <h2>Hear what your engine is trying to tell you</h2>
+  <p class="lead">MotorEar is a compact diagnostic device, designed and developed in Israel. Attach it to any motor with its magnet, and it listens to sound and vibration, checks the temperature, and tells you in plain words whether everything is fine, or exactly what is about to fail.</p>
+  <p><a class="btn btn-g" href="#contact">Get early access</a></p>
+
+  <h3>Small device. Professional-level hearing.</h3>
   <div class="grid">
-    <div class="card">
-      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="14" width="5" height="7" rx="1.5"/><rect x="17" y="14" width="5" height="7" rx="1.5"/></svg>
-      <h3>Listen</h3>
-      <p>Attaches to the motor and records its vibration and sound.</p>
-    </div>
-    <div class="card">
-      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16l3-6 3 4 3-9 3 7 2-3"/></svg>
-      <h3>Analyze</h3>
-      <p>Breaks the signal into frequencies and finds the typical fault signatures of bearings, gearboxes and inverters.</p>
-    </div>
-    <div class="card">
-      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      <h3>Predict</h3>
-      <p>Estimates remaining life and warns you about a failing component weeks before the breakdown.</p>
-    </div>
+    <div class="card"><h3>Two ears, not one</h3><p>One microphone listens to the engine, the other listens to the world around it. MotorEar subtracts the background, so traffic, wind and voices don't hide the problem.</p></div>
+    <div class="card"><h3>Feels every tremor</h3><p>A precision motion sensor picks up the tiniest changes in vibration, long before a worn bearing or a loose part becomes audible.</p></div>
+    <div class="card"><h3>Touch-free temperature</h3><p>Point the device at any component and read its temperature instantly, without touching hot metal.</p></div>
+    <div class="card"><h3>Your car's computer, secured</h3><p>An encrypted OBD-II adapter reads your vehicle's data. It works only with MotorEar, so no foreign device can connect.</p></div>
+    <div class="card"><h3>Big, clear screen</h3><p>A bright colour display shows the live spectrum, status and temperature right on the device.</p></div>
+    <div class="card"><h3>Built to last a shift</h3><p>A slim rechargeable battery keeps you working all day, and every measurement is saved on a memory card inside the device.</p></div>
+  </div>
+
+  <h3>An answer anyone understands</h3>
+  <p>The MotorEar app turns complex signals into a simple traffic light:</p>
+  <ul>
+    <li><b style="color:#22C55E">Green:</b> it's working fine.</li>
+    <li><b style="color:#EAB308">Yellow:</b> check soon.</li>
+    <li><b style="color:#dc2626">Red:</b> urgent, a failure is coming.</li>
+  </ul>
+  <p>And it doesn't stop at a colour. It tells you which part is the problem, for example a bearing, and what to do next, in plain language.</p>
+
+  <h3>Why MotorEar is different</h3>
+  <div class="grid">
+    <div class="card"><h3>Priced for people, not corporations</h3><p>Industrial vibration-monitoring systems cost thousands of dollars and need specialists to run them. MotorEar brings the same idea to drivers, farmers and workshops at a consumer price.</p></div>
+    <div class="card"><h3>Learns your machine</h3><p>Every motor sounds a little different. MotorEar records what "healthy" sounds like for your specific engine and compares every new check against it.</p></div>
+    <div class="card"><h3>No internet. No cloud. No subscription.</h3><p>All analysis happens inside the device, and your data stays on its memory card. It works in a field, a garage or a basement with no signal.</p></div>
+  </div>
+
+  <h3>Why now</h3>
+  <p>Repairs keep getting more expensive, and a breakdown costs far more than the part itself: towing, downtime, a lost workday, a missed harvest. Most failures announce themselves weeks in advance through sound and vibration. Until now, only factories could afford to listen. MotorEar puts that early warning in your hands.</p>
+
+  <h3>Questions you might have</h3>
+  <div class="faq-mini">
+    <p><b>"I'm not technical. Will I understand it?"</b><br>Yes. That's the whole point. If you can use a smartphone, you can use MotorEar. Green, yellow, red, and a clear sentence about what to do.</p>
+    <p><b>"Is it accurate enough to trust?"</b><br>MotorEar compares your machine with its own healthy baseline, so it notices changes that matter for your engine, not a generic average.</p>
+    <p><b>"Do I need Wi-Fi or a monthly plan?"</b><br>No. Everything works locally on the device. No account, no cloud, no subscription.</p>
+    <p><b>"What can I use it on?"</b><br>Cars, trucks, tractors, farm machinery, machine tools and industrial motors. Wherever there's a motor, MotorEar hears it.</p>
+    <p><b>"Is my data safe?"</b><br>Your data never leaves the device unless you choose to share it, and the OBD-II link is encrypted.</p>
+  </div>
+
+  <div class="ctas" style="margin-top:28px">
+    <a class="btn btn-g" href="#contact">Be the first to get MotorEar</a>
+    <a class="btn btn-b" href="#how">See how it works</a>
   </div>
 </section>
 
